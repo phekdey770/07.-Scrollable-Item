@@ -1,0 +1,35 @@
+body {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(197, 241, 217);
+}
+
+.vertical-snap {
+    display: grid;
+    grid-auto-flow: row;
+    gap: 1rem;
+    width: auto;
+    padding: 1rem;
+    height: 480px;
+    overflow-y: auto;
+    overscroll-behavior-y: contain;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none;
+    margin-top: 40px;
+}
+
+.vertical-snap > a {
+    scroll-snap-align: center;
+}
+
+.vertical-snap img {
+    width: 350px;
+    object-fit: contain;
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
